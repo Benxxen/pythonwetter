@@ -13,7 +13,7 @@ import os
 import socket
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'))
 
 # openshift is our PAAS for now.
 ON_PAAS = 'OPENSHIFT_REPO_DIR' in os.environ
@@ -52,6 +52,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap3',
+    'mysite',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -114,3 +116,13 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 
 )
+
+BOOTSTRAP3 = {
+    'jquery_url': '//code.jquery.com/jquery.min.js',
+    'base_url': '//netdna.bootstrapcdn.com/bootstrap/3.0.3/',
+    'css_url': None,
+    'theme_url': None,
+    'javascript_url': None,
+    'horizontal_label_class': 'col-md-2',
+    'horizontal_field_class': 'col-md-4',
+}

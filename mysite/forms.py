@@ -1,5 +1,5 @@
 from django.forms import *
-from PythonWetter.models import *
+from mysite.models import *
 #
 # class TemperatureMaxForm(ModelForm):
 #     class Meta:
