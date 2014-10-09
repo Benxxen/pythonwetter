@@ -12,8 +12,10 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 import socket
 
+PROJECT_PATH = os.path.dirname(os.path.realpath(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-TEMPLATE_DIRS = (os.path.join(BASE_DIR, '/templates'),)
+#TEMPLATE_DIRS = (os.path.join(BASE_DIR, '/templates'),)
+TEMPLATE_DIRS = (os.path.join(PROJECT_PATH, '../templates'),)
 
 # openshift is our PAAS for now.
 ON_PAAS = 'OPENSHIFT_REPO_DIR' in os.environ
