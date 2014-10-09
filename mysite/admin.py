@@ -1,4 +1,4 @@
 from django.contrib import admin
-from PythonWetter.models import *
+from mysite.models import *
 
 admin.site.register(Weather)
