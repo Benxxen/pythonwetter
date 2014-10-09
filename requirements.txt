@@ -5,3 +5,4 @@ django-jsonview==0.3.0
 django-sorting-bootstrap==1.0.2
 django-su==0.4.2
 yweather==0.1
+
