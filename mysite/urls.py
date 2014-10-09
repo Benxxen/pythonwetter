@@ -1,7 +1,7 @@
 # -*- coding: iso-8859-15 -*-
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-
+from mysite.views import Index
 admin.autodiscover()
 
 
