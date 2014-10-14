@@ -6,7 +6,7 @@ from django.db import models
 
 
 class Weather(models.Model):
-    Datum = models.DateField(max_length=16)
+    datum = models.DateField(max_length=16)
     Stadt = models.CharField(max_length=32)
     Anbieter = models.CharField(max_length=32)
     Wetter = models.CharField(max_length=16)
