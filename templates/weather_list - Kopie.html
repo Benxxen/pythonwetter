@@ -1,31 +1,31 @@
 {% extends 'base.html' %}
 {% load bootstrap3 %}
-{#<link href="{{ STATIC_URL }}css/pyweather.css" rel="stylesheet" type="text/css" media="screen">#}
-{% block content %}
 
-<table class = "search">
+{% block content %}
+<table align="center" style="background-color: whitesmoke; border-radius:15px;">
 <tr>
-<td id = "s1">
-<form enctype="multipart/form-data" action="http://127.0.0.1:8000/weather/" method="get" class="form-inline" form="role">
+<td style="padding:13px 17px 10px 17px">
+<form enctype="multipart/form-data" action="../weather/" method="get" class="form-inline" form="role" style="text-align: center">
     <div class="form-group">
         <label for="CityInput">Suche</label>
         <input name="city" type="text" class="form-control" id="CityInputFeld" placeholder="F&uuml;ge Stadt ein!">
-        <button type="submit" class="btnbtn-info">Abschicken</button>
-    </div>
+        <button style="margin-top: 10px" type="submit" class="btn btn-info">Abschicken</button>
+</div>
 </form></td>
 </tr>
 </table>
 <div class="col-md-12">
-<table class="table">
+<div align ="center">
+<table class="table" style="border-radius:20px; border-color:#C0C0C0; border-spacing:5px; border-collapse: separate">
 <tr>
-    <td class="col-md-6-1">
+    <td style="background-color: #D699EB;border-width:0px 7px 5px 0px; border-color:#CC7FE5; border-style:solid; border-radius:20px; border-collapse: separate" class="col-md-6">
     Weather for {{ yahoo_wetter.title}} <br />
-        <img src="{{STATIC_URL}}images/yh/{{ yahoo_wetter.code }}.png" class="weather-code"/>
+        <img src="{{STATIC_URL}}images/yh/{{ yahoo_wetter.code }}.png" height="150px" align="right"/>
         {{ yahoo_wetter.current_condition}} <br />
         Actual Temperature: {{ yahoo_wetter.temp}}&nbsp;{{ yahoo_wetter.utemp}} <br />
         Sunrise: {{ yahoo_wetter.sunrise}} <br />
         Sunset:  {{ yahoo_wetter.sunset}} <br />
-        Wind: {{ yahoo_wetter.windspeed}} km/h from
+        Wind: {{ yahoo_wetter.windspeed}} km/h  from 
 
         {% if yahoo_wetter.winddirection <= 23 %}
             N
@@ -46,10 +46,9 @@
         {% else  %}
             nix
         {% endif %}
-        ({{ yahoo_wetter.winddirection }})
- <br />
+        ({{ yahoo_wetter.winddirection }})<br />
     </td>
-    <td class="col-md-6" id ="col-md-6_2">
+    <td style="background-color: #FFC;border-width:0px 7px 5px 0px; border-color:#CCCCA3; border-style:solid; border-radius:20px; border-collapse: separate" class="col-md-6">
     Wetter f&uuml;r {{ wetter_com.title}} <br />
         <img src="{{STATIC_URL}}images/wc/d_{{ wetter_com.code }}_L.png" height="150px" align="right"/>
         {{ wetter_com.condition}} <br />
@@ -62,30 +61,29 @@
 <br />
 </table>
 </div>
-<table class="table">
+<table class="table" style="border-radius:20px;border-spacing:5px; border-collapse: separate">
 <tr>
 {% for yforecast in yahoo_wetter.forecasts %}
-    <td id = "td_forecast_y">
+    <td style="background-color: #D699EB; border-width:0px 7px 5px 0px; border-color:#CC7FE5;  border-style:solid; border-radius:20px;  border-collapse: separate">
     {{ yforecast.date }}
     <br />
-    <img src="{{STATIC_URL}}images/yh/{{ yforecast.code }}.png" class="weather-code-low"/>
+    <img src="{{STATIC_URL}}images/yh/{{ yforecast.code }}.png" height="80px" align="right"/>
     <br />
     {{ yforecast.condition }}
     <br />
     Min: {{ yforecast.low }} C
     Max: {{ yforecast.high }} C
     <br />
-
     Wind: {{ yforecast.windspeed}} km/h  from {{ yforecast.winddirection }}
     </td>
 {% endfor %}
 </tr>
 <tr>
 {% for wforecast in wetter_com.forecastsw %}
-  <td class = "td_forecast_w">
+  <td style="background-color: #FFC;border-width:0px 7px 5px 0px; border-color:#CCCCA3; border-style:solid; border-radius:20px; border-collapse: separate">
     {{ wforecast.date }}
     <br />
-    <img src="{{STATIC_URL}}images/wc/d_{{ wforecast.code }}_M.png" class="weather-code-low"/>
+    <img src="{{STATIC_URL}}images/wc/d_{{ wforecast.code }}_M.png" height="80px" align="right"/>
     <br />
     {{ wforecast.condition }}
     <br />
@@ -95,10 +93,11 @@
     Wind: {{ wforecast.windspeed}} km/h  aus {{ wforecast.winddirection }}
     </td>
 {% endfor %}
-<td class="td_forecast_w"></td>
-<td class="td_forecast_w"></td>
+<td style="background-color: #FFC;border-width:0px 7px 5px 0px; border-color:#CCCCA3; border-style:solid; border-radius:20px; border-collapse: separate"></td>
+<td style="background-color: #FFC;border-width:0px 7px 5px 0px; border-color:#CCCCA3; border-style:solid; border-radius:20px; border-collapse: separate"></td>
 </table>
-<div class ="powered">
+</div>
+<div style="margin-left:2em">
 Powered by wetter.com <br />
 <a href="http://www.wetter.com" target="_blank">http://www.wetter.com</a>
 </div>
