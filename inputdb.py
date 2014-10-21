@@ -23,7 +23,7 @@ yunits = dom.getElementsByTagNameNS(WEATHER_NSY, 'units')[0]
 
 windspeed = str(ywind.getAttribute('speed')),
 type(windspeed)
-winddir = ywind.getAttribute('direction'),
+winddir = int(ywind.getAttribute('direction')),
 unit = yunits.getAttribute('temperature'),
 yastronomy.getAttribute('sunrise'),
 temperature = ycondition.getAttribute('temp'),
@@ -33,6 +33,7 @@ ycondition.getAttribute('temp'),
 code = str(ycondition.getAttribute('code')),
 forecasts,
 dom.getElementsByTagName('title')[0].firstChild.data
+
 print type(winddir)
 if winddir <= 23:
     winddir = 'N'
