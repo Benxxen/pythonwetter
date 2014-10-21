@@ -55,6 +55,6 @@ else:
 
 connection = psycopg2.connect(database='pythonwetter', user=os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'], password=os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'], host=os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'], port=os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'])
 cursor = connection.cursor()
-cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Berlin','Yahoo',%s,%s,%s,%s,%s)", (condition, temperature, unit, code, winddir ))
+cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Berlin','Yahoo',%s,%s,%s,%s,'60',%s)", (condition, temperature, unit, code, winddir ))
 connection.commit()
 connection.close()
