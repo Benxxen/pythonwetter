@@ -15,10 +15,10 @@ woeid = client.fetch_woeid('Berlin')
 url = WEATHER_URLY % woeid
 dom = minidom.parse(urllib.urlopen(url))
 forecasts = []
-    ycondition = dom.getElementsByTagNameNS(WEATHER_NSY, 'condition')[0]
-    yastronomy = dom.getElementsByTagNameNS(WEATHER_NSY, 'astronomy')[0]
-    ywind = dom.getElementsByTagNameNS(WEATHER_NSY, 'wind')[0]
-    yunits = dom.getElementsByTagNameNS(WEATHER_NSY, 'units')[0]
+ycondition = dom.getElementsByTagNameNS(WEATHER_NSY, 'condition')[0]
+yastronomy = dom.getElementsByTagNameNS(WEATHER_NSY, 'astronomy')[0]
+ywind = dom.getElementsByTagNameNS(WEATHER_NSY, 'wind')[0]
+yunits = dom.getElementsByTagNameNS(WEATHER_NSY, 'units')[0]
 
 ywind.getAttribute('speed'),
 ywind.getAttribute('direction'),
