@@ -27,7 +27,7 @@ yunits.getAttribute('temperature'),
 yastronomy.getAttribute('sunrise'),
 ycondition.getAttribute('temp'),
 yastronomy.getAttribute('sunset'),
-ycondition.getAttribute('text'),
+print ycondition.getAttribute('text')
 ycondition.getAttribute('temp'),
 ycondition.getAttribute('code'),
 forecasts,
