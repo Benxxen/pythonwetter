@@ -51,10 +51,10 @@ elif winddir <= 293:
 elif winddir <= 338:
     winddir = 'NW'
 else:
-    winddir = 'nix'
+    winddir = 'ni'
 
 print winddir
-type(winddir)
+print type(winddir)
 
 connection = psycopg2.connect(database='pythonwetter', user=os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'], password=os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'], host=os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'], port=os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'])
 cursor = connection.cursor()
