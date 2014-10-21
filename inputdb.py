@@ -29,7 +29,7 @@ temperature = ycondition.getAttribute('temp'),
 yastronomy.getAttribute('sunset'),
 condition = ycondition.getAttribute('text')
 ycondition.getAttribute('temp'),
-code = ycondition.getAttribute('code'),
+code = str(ycondition.getAttribute('code')),
 forecasts,
 dom.getElementsByTagName('title')[0].firstChild.data
 
