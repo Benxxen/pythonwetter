@@ -27,7 +27,7 @@ yunits.getAttribute('temperature'),
 yastronomy.getAttribute('sunrise'),
 ycondition.getAttribute('temp'),
 yastronomy.getAttribute('sunset'),
-print ycondition.getAttribute('text')
+condition = ycondition.getAttribute('text')
 ycondition.getAttribute('temp'),
 ycondition.getAttribute('code'),
 forecasts,
@@ -36,6 +36,6 @@ dom.getElementsByTagName('title')[0].firstChild.data
 
 connection = psycopg2.connect(database='pythonwetter', user=os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'], password=os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'], host=os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'], port=os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'])
 cursor = connection.cursor()
-cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Potsdam','Yahoo','Rainy',10,'C',30,60,'SW')")
+cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Potsdam','Yahoo',%s,10,'C',30,60,'SW')", condition)
 connection.commit()
 connection.close()
