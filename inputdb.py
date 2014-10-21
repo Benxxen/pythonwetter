@@ -34,6 +34,27 @@ code = str(ycondition.getAttribute('code')),
 forecasts,
 dom.getElementsByTagName('title')[0].firstChild.data
 
+        {% if yahoo_wetter.winddirection <= 23 %}
+            N
+        {% elif yahoo_wetter.winddirection <= 67 %}
+            NE
+        {% elif yahoo_wetter.winddirection <= 113 %}
+            E
+        {% elif yahoo_wetter.winddirection <= 158 %}
+            SE
+        {% elif yahoo_wetter.winddirection <= 203 %}
+            S
+        {% elif yahoo_wetter.winddirection <= 248 %}
+            SW
+        {% elif yahoo_wetter.winddirection <= 293 %}
+            W
+        {% elif yahoo_wetter.winddirection <= 338 %}
+            NW
+        {% else  %}
+            nix
+        {% endif %}
+        ({{ yahoo_wetter.winddirection }})
+
 
 connection = psycopg2.connect(database='pythonwetter', user=os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'], password=os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'], host=os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'], port=os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'])
 cursor = connection.cursor()
