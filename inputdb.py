@@ -21,8 +21,10 @@ yastronomy = dom.getElementsByTagNameNS(WEATHER_NSY, 'astronomy')[0]
 ywind = dom.getElementsByTagNameNS(WEATHER_NSY, 'wind')[0]
 yunits = dom.getElementsByTagNameNS(WEATHER_NSY, 'units')[0]
 
-windspeed = ywind.getAttribute('speed')
+windspeed = str(ywind.getAttribute('speed'))
+windspeed.split('.')
 print type(str(windspeed))
+print windspeed
 winddir = int(ywind.getAttribute('direction'))
 unit = yunits.getAttribute('temperature'),
 yastronomy.getAttribute('sunrise'),
