@@ -36,6 +36,6 @@ dom.getElementsByTagName('title')[0].firstChild.data
 
 connection = psycopg2.connect(database='pythonwetter', user=os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'], password=os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'], host=os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'], port=os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'])
 cursor = connection.cursor()
-cursor.execute("INSERT INTO PythonWetter_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Potsdam','Yahoo','%s',10,'C',30,60,'SW')", ycondition.getAttribute('text'),)
+cursor.execute("INSERT INTO PythonWetter_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Potsdam','Yahoo',%s,10,'C',30,60,'SW')", str(ycondition.getAttribute('text')),)
 connection.commit()
 connection.close()
