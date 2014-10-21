@@ -21,7 +21,7 @@ yastronomy = dom.getElementsByTagNameNS(WEATHER_NSY, 'astronomy')[0]
 ywind = dom.getElementsByTagNameNS(WEATHER_NSY, 'wind')[0]
 yunits = dom.getElementsByTagNameNS(WEATHER_NSY, 'units')[0]
 
-windspeed = int(ywind.getAttribute('speed'))
+windspeed = str(ywind.getAttribute('speed'))
 winddir = int(ywind.getAttribute('direction'))
 unit = yunits.getAttribute('temperature'),
 yastronomy.getAttribute('sunrise'),
@@ -36,7 +36,7 @@ dom.getElementsByTagName('title')[0].firstChild.data
 if winddir <= 23:
     winddir = 'N'
 elif winddir <= 67:
-    winddir =  'NE'
+    winddir = 'NE'
 elif winddir <= 113:
     winddir = 'E'
 elif winddir <= 158:
@@ -50,10 +50,10 @@ elif winddir <= 293:
 elif winddir <= 338:
     winddir = 'NW'
 else:
-    winddir = 'ni'
+    winddir = 'no'
 
 connection = psycopg2.connect(database='pythonwetter', user=os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'], password=os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'], host=os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'], port=os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'])
 cursor = connection.cursor()
-cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Berlin','Yahoo',%s,%s,%s,%s,&s,%s)", (condition, temperature, unit, code, windspeed, winddir ))
+cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Berlin','Yahoo',%s,%s,%s,%s,%s,%s)", (condition, temperature, unit, code, windspeed, winddir ))
 connection.commit()
 connection.close()
