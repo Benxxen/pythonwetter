@@ -22,7 +22,7 @@ ywind = dom.getElementsByTagNameNS(WEATHER_NSY, 'wind')[0]
 yunits = dom.getElementsByTagNameNS(WEATHER_NSY, 'units')[0]
 
 windspeed = str(ywind.getAttribute('speed'))
-windspeed.split('.')
+windspeed = windspeed[:-3]
 print type(str(windspeed))
 print windspeed
 winddir = int(ywind.getAttribute('direction'))
