@@ -33,7 +33,7 @@ ycondition.getAttribute('temp'),
 code = str(ycondition.getAttribute('code')),
 forecasts,
 dom.getElementsByTagName('title')[0].firstChild.data
-print type winddir
+print type(winddir)
 if winddir <= 23:
     winddir = 'N'
 elif winddir <= 67:
