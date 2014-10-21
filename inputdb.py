@@ -34,30 +34,30 @@ code = str(ycondition.getAttribute('code')),
 forecasts,
 dom.getElementsByTagName('title')[0].firstChild.data
 
-        {% if yahoo_wetter.winddirection <= 23 %}
-            N
-        {% elif yahoo_wetter.winddirection <= 67 %}
-            NE
-        {% elif yahoo_wetter.winddirection <= 113 %}
-            E
-        {% elif yahoo_wetter.winddirection <= 158 %}
-            SE
-        {% elif yahoo_wetter.winddirection <= 203 %}
-            S
-        {% elif yahoo_wetter.winddirection <= 248 %}
-            SW
-        {% elif yahoo_wetter.winddirection <= 293 %}
-            W
-        {% elif yahoo_wetter.winddirection <= 338 %}
-            NW
-        {% else  %}
-            nix
-        {% endif %}
-        ({{ yahoo_wetter.winddirection }})
+if winddir <= 23:
+    winddir = 'N'
+elif winddir <= 67:
+    winddir =  'NE'
+elif winddir <= 113:
+    winddir = 'E'
+elif winddir <= 158:
+    winddir = 'SE'
+elif winddir <= 203:
+    winddir = 'S'
+elif winddir <= 248:
+    winddir = 'SW'
+elif winddir <= 293:
+    winddir = 'W'
+elif winddir <= 338:
+    winddir = 'NW'
+else:
+    winddir = 'nix'
 
+print winddir
+type(winddir)
 
 connection = psycopg2.connect(database='pythonwetter', user=os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'], password=os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'], host=os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'], port=os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'])
 cursor = connection.cursor()
-cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Berlin','Yahoo',%s,%s,%s,%s,60,%s)", (condition, temperature, unit, code ))
+cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Berlin','Yahoo',%s,%s,%s,%s,60,%s)", (condition, temperature, unit, code, winddir ))
 connection.commit()
 connection.close()
