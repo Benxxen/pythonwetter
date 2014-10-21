@@ -22,6 +22,7 @@ ywind = dom.getElementsByTagNameNS(WEATHER_NSY, 'wind')[0]
 yunits = dom.getElementsByTagNameNS(WEATHER_NSY, 'units')[0]
 
 windspeed = str(ywind.getAttribute('speed')),
+type(windspeed)
 winddir = str(ywind.getAttribute('direction')),
 unit = yunits.getAttribute('temperature'),
 yastronomy.getAttribute('sunrise'),
@@ -36,6 +37,6 @@ dom.getElementsByTagName('title')[0].firstChild.data
 
 connection = psycopg2.connect(database='pythonwetter', user=os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'], password=os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'], host=os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'], port=os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'])
 cursor = connection.cursor()
-cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Berlin','Yahoo',%s,%s,%s,%s,%s,%s)", (condition, temperature, unit, code, windspeed, winddir, ))
+cursor.execute("INSERT INTO mysite_weather (Datum, Stadt, Anbieter, Wetter, Tagestemperatur, Einheit, Kondition, Windgeschwindigkeit, Windrichtung) VALUES ('2014-10-21','Berlin','Yahoo',%s,%s,%s,%s,60,%s)", (condition, temperature, unit, code, windspeed, winddir, ))
 connection.commit()
 connection.close()
