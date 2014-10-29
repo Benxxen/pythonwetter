@@ -16,7 +16,7 @@ class Weather(models.Model):
     windgeschwindigkeit = models.IntegerField(max_length=3)
     windrichtung = models.CharField(max_length=2)
     
-	def __str__(self):              # __unicode__ on Python 2
+	def __str__(self):
         return str(self.datum) + ", " + self.stadt + ", " + self.anbieter
 
 # class PLZ(models.Model):
