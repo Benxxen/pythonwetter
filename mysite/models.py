@@ -15,7 +15,6 @@ class Weather(models.Model):
     kondition = models.IntegerField(max_length=4)
     windgeschwindigkeit = models.IntegerField(max_length=3)
     windrichtung = models.CharField(max_length=2)
-    
 	def __str__(self):
         return str(self.datum) + ", " + self.stadt + ", " + self.anbieter
 
