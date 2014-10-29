@@ -13,11 +13,11 @@ class Weather(models.Model):
     tagestemperatur = models.IntegerField(max_length=3)
     einheit = models.CharField(max_length=1)
     kondition = models.IntegerField(max_length=4)
-    windgeschwindigkeit = models.IntegerField(max_length=3)
+    windgeschwindigkeit = models.IntegerField(max_length=5)
     windrichtung = models.CharField(max_length=2)
-	def __str__(self):
-        return str(self.datum) + ", " + self.stadt + ", " + self.anbieter
 
+    def __str__(self):              # __unicode__ on Python 2
+        return str(self.datum) + ", " + self.stadt + ", " + self.anbieter
 # class PLZ(models.Model):
 #
 
