@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3678d1f1-8abb-4f77-b0f7-06152fdf25d4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonwetter/admin.py" />
+      <change type="DELETED" beforePath="C:\pythonwetter\mysite\admin.py" afterPath="" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\__init__.py" afterPath="$PROJECT_DIR$/pythonwetter/__init__.py" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\forms.py" afterPath="$PROJECT_DIR$/pythonwetter/forms.py" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\getweather.py" afterPath="$PROJECT_DIR$/pythonwetter/getweather.py" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\models.py" afterPath="$PROJECT_DIR$/pythonwetter/models.py" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\settings.py" afterPath="$PROJECT_DIR$/pythonwetter/settings.py" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\css\pyweather.css" afterPath="$PROJECT_DIR$/pythonwetter/static/css/pyweather.css" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_0_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_0_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_0_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_0_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_10_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_10_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_10_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_10_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_1_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_1_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_1_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_1_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_20_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_20_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_20_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_20_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_2_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_2_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_2_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_2_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_30_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_30_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_30_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_30_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_3_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_3_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_3_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_3_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_40_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_40_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_40_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_40_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_45_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_45_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_45_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_45_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_48_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_48_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_48_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_48_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_49_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_49_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_49_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_49_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_4_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_4_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_4_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_4_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_50_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_50_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_50_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_50_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_51_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_51_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_51_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_51_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_53_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_53_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_53_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_53_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_55_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_55_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_55_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_55_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_56_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_56_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_56_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_56_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_57_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_57_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_57_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_57_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_5_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_5_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_5_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_5_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_60_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_60_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_60_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_60_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_61_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_61_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_61_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_61_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_63_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_63_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_63_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_63_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_65_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_65_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_65_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_65_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_66_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_66_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_66_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_66_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_67_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_67_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_67_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_67_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_68.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_68.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_68_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_68_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_69_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_69_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_69_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_69_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_6_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_6_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_6_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_6_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_70_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_70_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_70_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_70_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_71_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_71_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_71_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_71_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_73_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_73_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_73_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_73_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_75_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_75_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_75_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_75_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_7_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_7_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_7_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_7_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_80_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_80_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_80_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_80_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_81_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_81_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_81_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_81_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_82_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_82_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_82_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_82_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_83_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_83_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_83_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_83_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_84_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_84_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_84_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_84_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_85_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_85_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_85_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_85_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_86_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_86_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_86_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_86_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_8_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_8_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_8_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_8_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_90_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_90_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_90_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_90_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_95_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_95_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_95_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_95_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_96_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_96_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_96_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_96_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_9_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_9_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\d_9_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/d_9_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_0_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_0_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_0_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_0_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_10_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_10_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_10_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_10_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_1_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_1_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_1_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_1_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_20_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_20_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_20_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_20_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_2_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_2_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_2_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_2_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_30_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_30_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_30_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_30_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_3_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_3_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_3_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_3_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_40_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_40_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_40_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_40_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_45_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_45_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_45_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_45_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_48_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_48_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_48_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_48_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_49_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_49_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_49_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_49_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_4_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_4_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_4_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_4_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_50_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_50_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_50_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_50_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_51_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_51_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_51_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_51_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_53_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_53_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_53_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_53_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_55_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_55_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_55_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_55_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_56_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_56_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_56_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_56_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_57_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_57_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_57_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_57_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_5_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_5_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_5_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_5_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_60_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_60_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_60_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_60_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_61_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_61_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_61_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_61_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_63_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_63_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_63_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_63_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_65_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_65_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_65_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_65_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_66_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_66_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_66_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_66_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_67_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_67_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_67_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_67_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_68_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_68_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_68_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_68_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_69_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_69_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_69_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_69_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_6_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_6_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_6_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_6_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_70_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_70_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_70_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_70_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_71_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_71_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_71_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_71_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_73_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_73_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_73_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_73_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_75_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_75_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_75_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_75_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_7_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_7_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_7_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_7_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_80_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_80_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_80_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_80_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_81_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_81_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_81_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_81_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_82_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_82_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_82_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_82_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_83_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_83_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_83_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_83_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_84_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_84_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_84_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_84_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_85_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_85_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_85_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_85_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_86_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_86_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_86_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_86_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_8_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_8_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_8_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_8_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_90_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_90_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_90_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_90_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_95_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_95_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_95_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_95_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_96_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_96_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_96_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_96_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_9_L.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_9_L.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\wc\n_9_M.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/wc/n_9_M.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\0.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/0.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\1.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/1.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\10.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/10.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\11.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/11.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\12.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/12.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\13.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/13.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\14.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/14.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\15.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/15.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\16.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/16.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\17.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/17.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\18.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/18.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\19.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/19.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\2.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/2.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\20.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/20.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\21.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/21.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\22.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/22.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\23.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/23.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\24.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/24.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\25.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/25.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\26.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/26.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\27.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/27.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\28.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/28.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\29.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/29.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\3.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/3.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\30.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/30.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\31.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/31.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\32.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/32.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\3200.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/3200.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\33.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/33.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\34.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/34.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\35.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/35.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\36.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/36.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\37.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/37.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\38.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/38.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\39.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/39.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\4.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/4.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\40.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/40.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\41.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/41.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\42.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/42.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\43.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/43.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\44.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/44.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\45.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/45.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\46.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/46.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\47.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/47.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\48.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/48.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\49.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/49.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\5.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/5.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\6.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/6.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\7.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/7.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\8.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/8.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\static\images\yh\9.png" afterPath="$PROJECT_DIR$/pythonwetter/static/images/yh/9.png" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\urls.py" afterPath="$PROJECT_DIR$/pythonwetter/urls.py" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\views.py" afterPath="$PROJECT_DIR$/pythonwetter/views.py" />
+      <change type="MOVED" beforePath="C:\pythonwetter\mysite\wsgi.py" afterPath="$PROJECT_DIR$/pythonwetter/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inputdb.py" afterPath="$PROJECT_DIR$/inputdb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
+    </list>
+    <ignored path="pythonwetter.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="pythonwetter" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="manage.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="255">
+              <caret line="5" column="76" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setup.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="255">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.36" vertical-offset="782" max-vertical-offset="5321">
+              <caret line="48" column="592" selection-start-line="48" selection-start-column="590" selection-end-line="48" selection-end-column="592" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49078342" vertical-offset="509" max-vertical-offset="1377">
+              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/manage.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonwetter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonwetter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pythonwetter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings />
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.pythonwetter">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="pythonwetter" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pythonwetter" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Django server.pythonwetter" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3678d1f1-8abb-4f77-b0f7-06152fdf25d4" name="Default" comment="" />
+      <created>1414873398820</created>
+      <updated>1414873398820</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="272">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5321">
+          <caret line="48" column="592" selection-start-line="48" selection-start-column="590" selection-end-line="48" selection-end-column="592" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="5321">
+          <caret line="48" column="592" selection-start-line="48" selection-start-column="590" selection-end-line="48" selection-end-column="592" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.72" vertical-offset="0" max-vertical-offset="255">
+          <caret line="5" column="76" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.36" vertical-offset="782" max-vertical-offset="5321">
+          <caret line="48" column="592" selection-start-line="48" selection-start-column="590" selection-end-line="48" selection-end-column="592" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.12" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49078342" vertical-offset="509" max-vertical-offset="1377">
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
