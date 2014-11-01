@@ -55,7 +55,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap3',
-    'pythonwetter',
+    'mysite',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -67,9 +67,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'pythonwetter.urls'
+ROOT_URLCONF = 'mysite.urls'
 
-WSGI_APPLICATION = 'pythonwetter.wsgi.application'
+WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 # Database
