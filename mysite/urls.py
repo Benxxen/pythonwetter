@@ -1,7 +1,7 @@
 # -*- coding: iso-8859-15 -*-
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from pythonwetter.views import Index
+from mysite.views import Index
 admin.autodiscover()
 
 
@@ -12,5 +12,5 @@ urlpatterns = patterns('',
 	
 	url(r'^$', Index.as_view(), name='index'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^weather/$', 'pythonwetter.views.get_weather_list', name='PythonWeather'),
+    url(r'^weather/$', 'mysite.views.get_weather_list', name='PythonWeather'),
 )

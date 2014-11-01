@@ -1,7 +1,7 @@
 # -*- coding: iso-8859-15 -*-
 from django.shortcuts import render
-from pythonwetter.getweather import yahoowetter
-from pythonwetter.getweather import wettercomwetter
+from mysite.getweather import yahoowetter
+from mysite.getweather import wettercomwetter
 from xml.dom import minidom
 import yweather
 import hashlib
