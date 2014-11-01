@@ -10,7 +10,7 @@ from time import strftime
 WEATHER_URLY = 'http://xml.weather.yahoo.com/forecastrss?w=%s&u=c'
 WEATHER_NSY = 'http://xml.weather.yahoo.com/ns/rss/1.0'
 
-cityarray = ['Potsdam', 'Berlin', 'Hamburg', 'Brandenburg, Havel', 'Muenchen']
+cityarray = ['Potsdam', 'Berlin', 'Hamburg', 'Brandenburg, Havel', 'Aachen']
 
 for city in cityarray:
         ########### Yahoo ###########
