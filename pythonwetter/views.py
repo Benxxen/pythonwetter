@@ -1,4 +1,4 @@
-# -*- coding: iso-8859-15 -*-
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 from pythonwetter.getweather import yahoowetter
 from pythonwetter.getweather import wettercomwetter
