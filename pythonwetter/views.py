@@ -1,8 +1,8 @@
 # -*- coding: iso-8859-15 -*-
 from django.shortcuts import render
-from PythonWetter.getweather import yahoowetter
-from PythonWetter.getweather import wettercomwetter
-from PythonWetter.serializers import *
+from pythonwetter.getweather import yahoowetter
+from pythonwetter.getweather import wettercomwetter
+from pythonwetter.serializers import *
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from xml.dom import minidom
