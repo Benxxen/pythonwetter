@@ -1,11 +1,15 @@
-# -*- coding: utf-8 -*-
+# -*- coding: iso-8859-15 -*-
 from django.shortcuts import render
-from pythonwetter.getweather import yahoowetter
-from pythonwetter.getweather import wettercomwetter
+from PythonWetter.getweather import yahoowetter
+from PythonWetter.getweather import wettercomwetter
+from PythonWetter.serializers import *
+from rest_framework import viewsets, status
+from rest_framework.response import Response
 from xml.dom import minidom
 import yweather
 import hashlib
 import urllib
+
 
 def get_weather_list(request):
 
@@ -27,18 +31,21 @@ def get_weather_list(request):
     citycode = dom.getElementsByTagName('city_code')[0].firstChild.data
     client = yweather.Client()
 
-
-
 ########## Umwandeln der Stadt in eine Where on Earty ID (WOEID) ##########
     woe = client.fetch_woeid(city)
     weather_listy = yahoowetter(woe)
     weather_listw = wettercomwetter(citycode)
     return render(request, 'weather_list.html', {'page_title': 'Wetter in Python', 'yahoo_wetter': weather_listy,
                                                  'wetter_com': weather_listw})
-from django.views.generic import View
-from django.http import HttpResponse
 
-class Index(View):
 
-    def get(self, request, *args, **kwargs):
-        return HttpResponse('django 1.7 on Openshift asd')
+class WeatherViewSet(viewsets.ModelViewSet):
+    queryset = Weather.objects.all()
+    serializer_class = WeatherSerializer
+
+    #
+    # def create(self, request):
+    #     serializer = WeatherSerializer(data=request.DATA)
+    #     if serializer.is_valid():
+    #         return Response(serializer.data, status=status.HTTP_201_CREATED)
+    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

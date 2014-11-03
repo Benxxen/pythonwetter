@@ -55,6 +55,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap3',
+    'rest_framework',
     'pythonwetter',
 )
 
@@ -127,4 +128,12 @@ BOOTSTRAP3 = {
     'javascript_url': None,
     'horizontal_label_class': 'col-md-2',
     'horizontal_field_class': 'col-md-4',
+}
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
 }
