@@ -31,7 +31,6 @@ for city in cityarray:
         condition = str(ycondition.getAttribute('text'))
         code = int(ycondition.getAttribute('code'))
         title = dom.getElementsByTagName('title')[0].firstChild.data[16:]
-        winddir = 'N'
         if winddir <= 23:
             winddir = 'N'
         elif winddir <= 67:
@@ -49,7 +48,7 @@ for city in cityarray:
         elif winddir <= 338:
             winddir = 'NW'
         else:
-            winddir = 'no'
+            winddir = 'nn'
         ######################
         ########### Wetter.com ###########
         projektname = "pythonwetterfhb"
