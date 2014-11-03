@@ -6,4 +6,4 @@ django-sorting-bootstrap==1.0.2
 django-su==0.4.2
 yweather==0.1
 psycopg2==2.5.4
-djangorestframework==2.4.4
+djangorestframework==2.4.3
