@@ -3,8 +3,7 @@ from django.shortcuts import render
 from pythonwetter.getweather import yahoowetter
 from pythonwetter.getweather import wettercomwetter
 from pythonwetter.serializers import *
-from rest_framework import viewsets, status
-from rest_framework.response import Response
+from rest_framework import viewsets
 from xml.dom import minidom
 import yweather
 import hashlib
@@ -42,10 +41,3 @@ def get_weather_list(request):
 class WeatherViewSet(viewsets.ModelViewSet):
     queryset = Weather.objects.all()
     serializer_class = WeatherSerializer
-
-    #
-    # def create(self, request):
-    #     serializer = WeatherSerializer(data=request.DATA)
-    #     if serializer.is_valid():
-    #         return Response(serializer.data, status=status.HTTP_201_CREATED)
-    #     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
