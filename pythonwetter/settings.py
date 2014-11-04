@@ -60,7 +60,7 @@ INSTALLED_APPS = (
                   'allauth',
                   'allauth.account',
                   'allauth.socialaccount',
-                  'allauth.socialaccount.providers.facebook
+                  'allauth.socialaccount.providers.facebook',
 # #     #  ... include the providers you want to enable:
 # #     # 'allauth.socialaccount.providers.amazon',
 # #     # 'allauth.socialaccount.providers.angellist',
