@@ -111,7 +111,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
                                )
 
 
-SITE_ID = 2
+SITE_ID = 3
 
 LOGIN_REDIRECT_URL = '/'
 SOCIALACCOUNT_QUERY_EMAIL = True
