@@ -7,3 +7,8 @@ django-su==0.4.2
 yweather==0.1
 psycopg2==2.5.4
 djangorestframework==2.4.3
+django-allauth==0.18.0
+oauthlib==0.6.3
+python-openid==2.2.5
+requests==2.4.3
+request-oauthlib==0.4.2
