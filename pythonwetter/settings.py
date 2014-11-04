@@ -46,8 +46,7 @@ else:
 
 
 # Application definition
-INSTALLED_APPS = (
-                  'django.contrib.sites',
+INSTALLED_APPS = ('django.contrib.sites',
                   'django.contrib.admin',
                   'django.contrib.auth',
                   'django.contrib.contenttypes',
