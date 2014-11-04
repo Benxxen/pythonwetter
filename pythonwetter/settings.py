@@ -46,47 +46,72 @@ else:
 
 
 # Application definition
-
 INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'bootstrap3',
-    'rest_framework',
-    'pythonwetter',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.facebook',
-)
-
+                  'django.contrib.sites',
+                  'django.contrib.admin',
+                  'django.contrib.auth',
+                  'django.contrib.contenttypes',
+                  'django.contrib.sessions',
+                  'django.contrib.messages',
+                  'django.contrib.staticfiles',
+                  'bootstrap3',
+                  'PythonWetter',
+                  'rest_framework',
+                  'allauth',
+                  'allauth.account',
+                  'allauth.socialaccount',
+                  'allauth.socialaccount.providers.facebook
+# #     #  ... include the providers you want to enable:
+# #     # 'allauth.socialaccount.providers.amazon',
+# #     # 'allauth.socialaccount.providers.angellist',
+# #     # 'allauth.socialaccount.providers.bitbucket',
+# #     # 'allauth.socialaccount.providers.bitly',
+# #     # 'allauth.socialaccount.providers.dropbox',
+# #     # 'allauth.socialaccount.providers.flickr',
+# #     # 'allauth.socialaccount.providers.feedly',
+# #     # 'allauth.socialaccount.providers.github',
+# #     # 'allauth.socialaccount.providers.google',
+# #     # 'allauth.socialaccount.providers.hubic',
+# #     # 'allauth.socialaccount.providers.instagram',
+# #     # 'allauth.socialaccount.providers.linkedin',
+# #     # 'allauth.socialaccount.providers.linkedin_oauth2',
+# #     # 'allauth.socialaccount.providers.openid',
+# #     # 'allauth.socialaccount.providers.persona',
+# #     # 'allauth.socialaccount.providers.soundcloud',
+# #     # 'allauth.socialaccount.providers.stackexchange',
+# #     # 'allauth.socialaccount.providers.tumblr',
+# #     # 'allauth.socialaccount.providers.twitch',
+# #     # 'allauth.socialaccount.providers.twitter',
+# #     # 'allauth.socialaccount.providers.vimeo',
+# #     # 'allauth.socialaccount.providers.vk',
+# #     # 'allauth.socialaccount.providers.weibo',
+# #     # 'allauth.socialaccount.providers.xing',
+                  )
 
 AUTHENTICATION_BACKENDS=(
-    # Needed to login by username in Django admin, regardless of `allauth`
-    "django.contrib.auth.backends.ModelBackend",
-    
-    # `allauth` specific authentication methods, such as login by e-mail
-    "allauth.account.auth_backends.AuthenticationBackend",
-)
-
+                         # Needed to login by username in Django admin, regardless of `allauth`
+                         "django.contrib.auth.backends.ModelBackend",
+                         
+                         # `allauth` specific authentication methods, such as login by e-mail
+                         "allauth.account.auth_backends.AuthenticationBackend",
+                         )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    # Required by allauth template tags
-    "django.contrib.auth.context_processors.auth",
-    # allauth specific context processors
-    "django.core.context_processors.debug",
-    "django.core.context_processors.i18n",
-    "django.core.context_processors.media",
-    "django.core.context_processors.static",
-    "django.core.context_processors.request",
-    "allauth.account.context_processors.account",
-    "allauth.socialaccount.context_processors.socialaccount",
-)
+                               # Required by allauth template tags
+                               
+                               "django.contrib.auth.context_processors.auth",
+                               # allauth specific context processors
+                               "django.core.context_processors.debug",
+                               "django.core.context_processors.i18n",
+                               "django.core.context_processors.media",
+                               "django.core.context_processors.static",
+                               "django.core.context_processors.request",
+                               "allauth.account.context_processors.account",
+                               "allauth.socialaccount.context_processors.socialaccount",
+                               )
 
-SITE_ID = 1
+
+SITE_ID = 2
 
 LOGIN_REDIRECT_URL = '/'
 SOCIALACCOUNT_QUERY_EMAIL = True
@@ -98,6 +123,7 @@ SOCIALACCOUNT_PROVIDERS = {
         'VERIFIED_EMAIL:': False
 }
 }
+
 
 
 
