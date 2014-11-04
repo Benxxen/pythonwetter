@@ -46,21 +46,20 @@ else:
 
 
 # Application definition
-INSTALLED_APPS = (
-    'django.contrib.sites',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'bootstrap3',
-    'PythonWetter',
-    'rest_framework',
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.facebook',
+INSTALLED_APPS = ('django.contrib.sites',
+                  'django.contrib.admin',
+                  'django.contrib.auth',
+                  'django.contrib.contenttypes',
+                  'django.contrib.sessions',
+                  'django.contrib.messages',
+                  'django.contrib.staticfiles',
+                  'bootstrap3',
+                  'pythonwetter',
+                  'rest_framework',
+                  'allauth',
+                  'allauth.account',
+                  'allauth.socialaccount',
+                  'allauth.socialaccount.providers.facebook',
 # #     #  ... include the providers you want to enable:
 # #     # 'allauth.socialaccount.providers.amazon',
 # #     # 'allauth.socialaccount.providers.angellist',
@@ -86,7 +85,7 @@ INSTALLED_APPS = (
 # #     # 'allauth.socialaccount.providers.vk',
 # #     # 'allauth.socialaccount.providers.weibo',
 # #     # 'allauth.socialaccount.providers.xing',
-)
+                  )
 
 AUTHENTICATION_BACKENDS=(
                          # Needed to login by username in Django admin, regardless of `allauth`

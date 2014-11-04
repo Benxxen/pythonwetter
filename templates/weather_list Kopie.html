@@ -2,55 +2,19 @@
 {% load bootstrap3 %}
 {#<link href="{{ STATIC_URL }}css/pyweather.css" rel="stylesheet" type="text/css" media="screen">#}
 {% block content %}
-{% load socialaccount %}
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Wetter in Python</a>
-        </div>
-        
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-                <li>
-                    
-                    <button onclick=location.href="forecast.html" type="button" class="btn btn-default">Vorschau</button>
-                    {#          <a href="forecast.html">Vorschau</a>#}
-                </li>
-            </ul>
-            <form action ="http://pythonwetter-zwergchief.rhcloud.com/admin/pythonwetter/weather/" method="GET" enctype ="multipart/form-data">
-                <div class="feld">
-                    <input name="city" type="text" class="form-control" id="CityInputFeld" placeholder="F&uuml;ge Stadt ein!">
-                        </div>
-                <button type = "submit" class="btnbtn-default">Abschicken</button>
-            </form>
-            <ul class = "Facebook">
-                {#    <div class="Facebook">#}
-                    <a href="{% provider_login_url "facebook" method="oauth2"%}">Facebook</a>
-                    {#    </div>#}
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+
+<table class = "search">
+<tr>
+<td id = "s1">
+<form enctype="multipart/form-data" action="/weather/" method="get" class="form-inline" form="role">
+    <div class="form-group">
+        <label for="CityInput">Suche</label>
+        <input name="city" type="text" class="form-control" id="CityInputFeld" placeholder="F&uuml;ge Stadt ein!">
+        <button type="submit" class="btnbtn-info">Abschicken</button>
+    </div>
+</form></td>
+</tr>
+</table>
 <div class="col-md-12">
 <table class="table">
 <tr>
