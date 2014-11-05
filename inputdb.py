@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 __author__ = 'patrick'
-from pythonwetter.models import Weather
+from mysite.models import Weather
 import yweather
 import urllib
 import hashlib
@@ -10,7 +10,7 @@ from time import strftime
 WEATHER_URLY = 'http://xml.weather.yahoo.com/forecastrss?w=%s&u=c'
 WEATHER_NSY = 'http://xml.weather.yahoo.com/ns/rss/1.0'
 
-cityarray = ['Potsdam', 'Berlin', 'Hamburg', 'Brandenburg, Havel', 'Aachen']
+cityarray = ['Potsdam', 'Berlin', 'Hamburg', 'Brandenburg, Havel']
 
 for city in cityarray:
         ########### Yahoo ###########
@@ -31,6 +31,7 @@ for city in cityarray:
         condition = str(ycondition.getAttribute('text'))
         code = int(ycondition.getAttribute('code'))
         title = dom.getElementsByTagName('title')[0].firstChild.data[16:]
+        winddir = 'N'
         if winddir <= 23:
             winddir = 'N'
         elif winddir <= 67:
@@ -48,7 +49,7 @@ for city in cityarray:
         elif winddir <= 338:
             winddir = 'NW'
         else:
-            winddir = 'nn'
+            winddir = 'no'
         ######################
         ########### Wetter.com ###########
         projektname = "pythonwetterfhb"
