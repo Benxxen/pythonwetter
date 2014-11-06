@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>{{ page_title }}</title>
+    <script language="javascript" type="text/javascript" src="{{ STATIC_URL }}javascript/showHide.js"></script>
     {% load bootstrap3 %}
     <link href="{{ STATIC_URL }}css/pyweather.css" rel="stylesheet" type="text/css" media="screen">
     {% bootstrap_css %}
@@ -11,7 +12,7 @@
     <h2 align="center">{{ page_title }}</h2>
     {% bootstrap_messages %}
     {% block content %}
-        Dummy Content
+        dummy content
     {% endblock %}
 </body>
 </html>

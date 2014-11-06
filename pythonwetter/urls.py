@@ -19,4 +19,5 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^weather/$', 'pythonwetter.views.get_weather_list', name='PythonWeather'),
     url(r'^accounts/', include('allauth.urls')),
+	url(r'^weathers?search=(?P<pk>[0-9]+)/$', WeatherViewSet.as_view(),name='searchlist')
 )
