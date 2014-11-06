@@ -102,7 +102,7 @@ SOCIALACCOUNT_PROVIDERS = {
 
 SOCIALACCOUNT_PROVIDERS = \
     {'google':
-        {'SCOPE': ['profile', 'email'],
+        {'SCOPE': ['email'],
           'AUTH_PARAMS': { 'access_type': 'online' } }}
 
 
