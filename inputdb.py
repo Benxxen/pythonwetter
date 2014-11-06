@@ -84,3 +84,4 @@ for city in cityarray:
                      tagestemperatur=wtemperature, einheit=unit, kondition=wcode, windgeschwindigkeit=wwindspeed,
                      windrichtung=wwinddir)
         w2.save()
+print "fertig"
