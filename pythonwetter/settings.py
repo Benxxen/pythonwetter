@@ -87,7 +87,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
                                )
 
 
-SITE_ID = 5
+SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 SOCIALACCOUNT_QUERY_EMAIL = True
@@ -186,5 +186,8 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+    ],
+      'DEFAULT_FILTER_BACKENDS': (
+        'rest_framework.filters.DjangoFilterBackend',
+        'rest_framework.filters.SearchFilter'),
 }
