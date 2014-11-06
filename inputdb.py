@@ -76,8 +76,11 @@ for city in cityarray:
         wtitle = dom.getElementsByTagName('name')[0].firstChild.nodeValue + ", " + citycode[0:2]
         wcondition = dom.getElementsByTagName('w_txt')[4].firstChild.data
         wtemperature = dom.getElementsByTagName('tx')[4].firstChild.data
-        w1 = Weather(datum=strftime("%Y-%m-%d"), stadt=title, anbieter='Yahoo', wetter=condition, tagestemperatur=temperature, einheit=unit, kondition=code, windgeschwindigkeit=ywindspeed, windrichtung=winddir)
+        w1 = Weather(datum=strftime("%Y-%m-%d"), stadt=title, anbieter='Yahoo', wetter=condition,
+                     tagestemperatur=temperature, einheit=unit, kondition=code, windgeschwindigkeit=ywindspeed,
+                     windrichtung=winddir)
         w1.save()
-        w2 = Weather(datum=strftime("%Y-%m-%d"), stadt=wtitle, anbieter='Wetter.com', wetter=wcondition, tagestemperatur=wtemperature, einheit=unit, kondition=wcode, windgeschwindigkeit=wwindspeed, windrichtung=wwinddir)
+        w2 = Weather(datum=strftime("%Y-%m-%d"), stadt=wtitle, anbieter='Wetter.com', wetter=wcondition,
+                     tagestemperatur=wtemperature, einheit=unit, kondition=wcode, windgeschwindigkeit=wwindspeed,
+                     windrichtung=wwinddir)
         w2.save()
-print "Fertig"
