@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 __author__ = 'patrick'
-from mysite.models import Weather
+from pythonwetter.models import Weather
 import yweather
 import urllib
 import hashlib
