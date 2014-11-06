@@ -1,5 +1,5 @@
 """
-Django settings for mysite project.
+Django settings for django2 project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -10,71 +10,60 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-import socket
 
-PROJECT_PATH = os.path.dirname(os.path.realpath(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-#TEMPLATE_DIRS = (os.path.join(BASE_DIR, '/templates'),)
-TEMPLATE_DIRS = (os.path.join(PROJECT_PATH, '../templates'),)
-
-# openshift is our PAAS for now.
-ON_PAAS = 'OPENSHIFT_REPO_DIR' in os.environ
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
-if ON_PAAS:
-    SECRET_KEY = os.environ['OPENSHIFT_SECRET_TOKEN']
-else:
-    # SECURITY WARNING: keep the secret key used in production secret!
-    SECRET_KEY = ')_7av^!cy(wfx=k#3*7x+(=j^fzv+ot^1@sh9s9t=8$bu@r(z$'
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '1_o@wzd(pv*q@*+^lw2(lho=+x@mgq83*_tp$la(q47m@@58hg'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# adjust to turn off when on Openshift, but allow an environment variable to override on PAAS
-DEBUG = not ON_PAAS
-DEBUG = DEBUG or 'DEBUG' in os.environ
-if ON_PAAS and DEBUG:
-    print("*** Warning - Debug mode is on ***")
+DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-if ON_PAAS:
-    ALLOWED_HOSTS = [os.environ['OPENSHIFT_APP_DNS'], socket.gethostname()]
-else:
-    ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 
 # Application definition
-INSTALLED_APPS = ('django.contrib.sites',
-                  'django.contrib.admin',
-                  'django.contrib.auth',
-                  'django.contrib.contenttypes',
-                  'django.contrib.sessions',
-                  'django.contrib.messages',
-                  'django.contrib.staticfiles',
-                  'bootstrap3',
-                  'pythonwetter',
-                  'rest_framework',
-				  'allauth',
-                  'allauth.account',
-				  'allauth.socialaccount',
-				  'allauth.socialaccount.providers.facebook',
-				  'allauth.socialaccount.providers.google',
-				  'allauth.socialaccount.providers.twitter',
-                  )
+
+INSTALLED_APPS = (
+    'django.contrib.sites',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'bootstrap3',
+    'rest_framework',
+    'PythonWetter',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.twitter',
+)
+
+SITE_ID = 6
 
 AUTHENTICATION_BACKENDS=(
                          # Needed to login by username in Django admin, regardless of `allauth`
                          "django.contrib.auth.backends.ModelBackend",
-                         
+
                          # `allauth` specific authentication methods, such as login by e-mail
                          "allauth.account.auth_backends.AuthenticationBackend",
                          )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
+
                                # Required by allauth template tags
-                               
+
                                "django.contrib.auth.context_processors.auth",
                                # allauth specific context processors
                                "django.core.context_processors.debug",
@@ -84,10 +73,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
                                "django.core.context_processors.request",
                                "allauth.account.context_processors.account",
                                "allauth.socialaccount.context_processors.socialaccount",
-                               )
+)
 
-
-SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 SOCIALACCOUNT_QUERY_EMAIL = True
@@ -108,8 +95,6 @@ SOCIALACCOUNT_PROVIDERS = \
 
 
 
-
-
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -119,33 +104,27 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'pythonwetter.urls'
+# activate django-tools DynamicSiteMiddleware:
+USE_DYNAMIC_SITE_MIDDLEWARE = True
 
-WSGI_APPLICATION = 'pythonwetter.wsgi.application'
+ROOT_URLCONF = 'PythonWetter.urls'
+
+WSGI_APPLICATION = 'PythonWetter.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-if ON_PAAS:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',  
-            'NAME':     os.environ['OPENSHIFT_APP_NAME'],
-            'USER':     os.environ['OPENSHIFT_POSTGRESQL_DB_USERNAME'],
-            'PASSWORD': os.environ['OPENSHIFT_POSTGRESQL_DB_PASSWORD'],
-            'HOST':     os.environ['OPENSHIFT_POSTGRESQL_DB_HOST'],
-            'PORT':     os.environ['OPENSHIFT_POSTGRESQL_DB_PORT'],
-        }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'Wetter_DB',
+        'USER': 'PythonWetter',
+        'PASSWORD': '1234',
+        'HOST': '',
+        'PORT': '',
     }
-else:
-    # stock django
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -163,13 +142,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'wsgi','static')
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 
-)
+STATIC_URL = '/static/'
 
 BOOTSTRAP3 = {
     'jquery_url': '//code.jquery.com/jquery.min.js',
@@ -190,4 +164,9 @@ REST_FRAMEWORK = {
       'DEFAULT_FILTER_BACKENDS': (
         'rest_framework.filters.DjangoFilterBackend',
         'rest_framework.filters.SearchFilter'),
+    #  'DEFAULT_RENDERER_CLASSES': (
+    #      'rest_framework.renderers.HTMLFormRenderer',
+    #     'rest_framework.renderers.YAMLRenderer',
+    #     'rest_framework.renderers.BrowsableAPIRenderer',
+    # ),
 }
