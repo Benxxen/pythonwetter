@@ -89,16 +89,16 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 
 SITE_ID = 6
 
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/weather/'
 SOCIALACCOUNT_QUERY_EMAIL = True
-SOCIALACCOUNT_PROVIDERS = {
-    'facebook': {
-        'SCOPE': ['email'],
+SOCIALACCOUNT_PROVIDERS= \
+    {'facebook':
+       {'SCOPE': ['email', 'publish_stream'],
         'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
         'METHOD': 'oauth2',
-        'VERIFIED_EMAIL:': False
-    },
-    }
+        'LOCALE_FUNC': 'path.to.callable',
+        'VERIFIED_EMAIL': False}
+},
 
 SOCIALACCOUNT_PROVIDERS = \
     {'google':
