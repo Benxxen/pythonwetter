@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: iso-8859-15 -*-
 __author__ = 'patrick'
 from pythonwetter.models import Weather
 import yweather
