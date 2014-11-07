@@ -4,6 +4,7 @@ __author__ = 'patrick'
 import urllib
 import hashlib
 from xml.dom import minidom
+from functions import windrichtung
 
 
 ########## Wetter von Yahoo ##########
@@ -30,7 +31,7 @@ def yahoowetter(woeid):
     yunits = dom.getElementsByTagNameNS(WEATHER_NSY, 'units')[0]
     return {
         'windspeed': ywind.getAttribute('speed'),
-        'winddirection': int(ywind.getAttribute('direction')),
+        'winddirection': windrichtung(int(ywind.getAttribute('direction'))),
         'utemp': yunits.getAttribute('temperature'),
         'sunrise': yastronomy.getAttribute('sunrise'),
         'temp': ycondition.getAttribute('temp'),

@@ -14,7 +14,6 @@ import socket
 
 PROJECT_PATH = os.path.dirname(os.path.realpath(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-#TEMPLATE_DIRS = (os.path.join(BASE_DIR, '/templates'),)
 TEMPLATE_DIRS = (os.path.join(PROJECT_PATH, '../templates'),)
 
 # openshift is our PAAS for now.
@@ -56,15 +55,15 @@ INSTALLED_APPS = ('django.contrib.sites',
                   'bootstrap3',
                   'pythonwetter',
                   'rest_framework',
-				  'allauth',
+                  'allauth',
                   'allauth.account',
-				  'allauth.socialaccount',
-				  'allauth.socialaccount.providers.facebook',
-				  'allauth.socialaccount.providers.google',
-				  'allauth.socialaccount.providers.twitter',
+                  'allauth.socialaccount',
+                  'allauth.socialaccount.providers.facebook',
+                  'allauth.socialaccount.providers.google',
+                  'allauth.socialaccount.providers.twitter',
                   )
 
-AUTHENTICATION_BACKENDS=(
+AUTHENTICATION_BACKENDS = (
                          # Needed to login by username in Django admin, regardless of `allauth`
                          "django.contrib.auth.backends.ModelBackend",
                          

@@ -117,28 +117,7 @@
         Actual Temperature: {{ yahoo_wetter.temp}}&nbsp;{{ yahoo_wetter.utemp}} <br />
         Sunrise: {{ yahoo_wetter.sunrise}} <br />
         Sunset:  {{ yahoo_wetter.sunset}} <br />
-        Wind: {{ yahoo_wetter.windspeed}} km/h from
-
-        {% if yahoo_wetter.winddirection <= 23 %}
-            N
-        {% elif yahoo_wetter.winddirection <= 67 %}
-            NE
-        {% elif yahoo_wetter.winddirection <= 113 %}
-            E
-        {% elif yahoo_wetter.winddirection <= 158 %}
-            SE
-        {% elif yahoo_wetter.winddirection <= 203 %}
-            S
-        {% elif yahoo_wetter.winddirection <= 248 %}
-            SW
-        {% elif yahoo_wetter.winddirection <= 293 %}
-            W
-        {% elif yahoo_wetter.winddirection <= 338 %}
-            NW
-        {% else  %}
-            nix
-        {% endif %}
-        ({{ yahoo_wetter.winddirection }})
+        Wind: {{ yahoo_wetter.windspeed}} km/h from {{ yahoo_wetter.winddirection }}
  <br />
     </td>
     <td class="col-md-6" id ="col-md-6_2">
