@@ -90,8 +90,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 SITE_ID = 6
 
 LOGIN_REDIRECT_URL = '/weather/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/weather/'
+ACCOUNT_LOGOUT_ON_GET = True
+ACCOUNT_UNIQUE_EMAIL = False
 SOCIALACCOUNT_QUERY_EMAIL = True
-SOCIALACCOUNT_PROVIDERS= \
+SOCIALACCOUNT_PROVIDERS = \
     {'facebook':
        {'SCOPE': ['email', 'publish_stream'],
         'AUTH_PARAMS': {'auth_type': 'reauthenticate'},

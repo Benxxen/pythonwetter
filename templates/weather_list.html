@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load bootstrap3 %}
 {% load socialaccount %}
+{% load account %}
 {% block content %}
+{% user_display user as user_display %}
  <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -12,24 +14,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-          <a class="navbar-brand" href="#">Wetter in Python</a> 
+            <a class="navbar-brand" href="#">Wetter in Python</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-{% comment %}                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>{% endcomment %}
                 <li>
                     <a href="#" type="link" name="vorschau" value="Vorschau" onclick="return showHide()"/>Vorschau</a>
                 </li>
@@ -40,13 +30,13 @@
                         </div>
                 <button type = "submit" class="btn btn-default" id="submit">Abschicken</button>
             </form>
-            <button type = "submit" class="btn btn-default" name="login" id="submit2" value="Login" onclick="return showLogin()">Login</button>
-{#            <ul class = "Facebook">#}
-                {#    <div class="Facebook">#}
-{#                    <a href="{% provider_login_url "facebook" method="oauth2"%}">Facebook</a>#}
-{#                        #}
-                    {#    </div>#}
-{#            </ul>#}
+            {% if request.user.is_authenticated %}
+                <button type="submit" class="btn btn-default" name="logout" id="submit2" value="Logout" onclick="return logout()">Sign Out</button>
+                <label class="login_name" id="submit2">Du bist eingeloggt als {{ user_display }}</label>
+            {% else %}
+                <button type = "submit" class="btn btn-default" name="register" id="submit2" value="register" onclick="register()" class="login-popup">Register</button>
+                <button type = "submit" class="btn btn-default" name="login" id="submit2" value="Login" onclick="return showLogin()">Login</button>
+            {% endif %}
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
@@ -56,7 +46,7 @@
     	<h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
 		<div class="row omb_row-sm-offset-3 omb_socialButtons">
     	    <div class="col-xs-4 col-sm-2">
-		        <a href="{% provider_login_url "facebook" method="oauth2"%}" class="btn btn-lg btn-block omb_btn-facebook">
+		        <a href="{% provider_login_url "facebook" method="oauth2"%}" class="btn btn-lg btn-block omb_btn-facebook" onclick="changeID()">
 			        <i class="fa fa-facebook visible-xs"></i>
 			        <span class="hidden-xs">Facebook</span>
 		        </a>

@@ -144,6 +144,10 @@
     display:block;
 }
 
+.login_name{
+    padding-top: 7px;
+}
+
 .powered{
     margin-left:2em;
 }

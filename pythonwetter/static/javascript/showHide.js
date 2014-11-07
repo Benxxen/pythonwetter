@@ -33,4 +33,11 @@ function showLogin(){
         ele3.style.display="none";
     }
 }
+function logout(){
+    window.location.href="/accounts/logout";
+    return false;
+    }
+function register(){
+    window.location.href="/accounts/signup"
+}
 // ]]>
