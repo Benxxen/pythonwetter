@@ -14,7 +14,7 @@ WEATHER_NSY = 'http://xml.weather.yahoo.com/ns/rss/1.0'
 cityarray = ['Potsdam', 'Berlin', 'Hamburg', 'Brandenburg, Havel', 'Aachen']
 
 for city in cityarray:
-########### Yahoo ###########
+        ########### Yahoo ###########
         client = yweather.Client()
         woeid = client.fetch_woeid(city)
         url = WEATHER_URLY % woeid
