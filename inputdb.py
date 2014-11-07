@@ -60,7 +60,6 @@ for city in cityarray:
         client = yweather.Client()
         apiurl = "http://api.wetter.com/forecast/weather/city/"
         projektname = "pythonwetterfhb"
-        apikey = "c5aa08dea1427f7a5a90762ccca6d430"
         checksum = hashlib.md5(projektname + apikey + citycode).hexdigest()
         url = apiurl + citycode + "/project/" + projektname + "/cs/" + checksum
         dom = minidom.parse(urllib.urlopen(url))
@@ -73,10 +72,8 @@ for city in cityarray:
         wtitle = dom.getElementsByTagName('name')[0].firstChild.nodeValue + ", " + citycode[0:2]
         wcondition = dom.getElementsByTagName('w_txt')[4].firstChild.data
         wtemperature = dom.getElementsByTagName('tx')[4].firstChild.data
-        w1 = Weather(datum=strftime("%Y-%m-%d"), stadt=title, anbieter='Yahoo', wetter=condition, tagestemperatur=temperature, einheit=unit, kondition=code, windgeschwindigkeit=ywindspeed,
-                         windrichtung=winddir)
+        w1 = Weather(datum=strftime("%Y-%m-%d"), stadt=title, anbieter='Yahoo', wetter=condition, tagestemperatur=temperature, einheit=unit, kondition=code, windgeschwindigkeit=ywindspeed, windrichtung=winddir)
         w1.save()
         w2 = Weather(datum=strftime("%Y-%m-%d"), stadt=wtitle, anbieter='Wetter.com', wetter=wcondition, tagestemperatur=wtemperature, einheit=unit, kondition=wcode, windgeschwindigkeit=wwindspeed, windrichtung=wwinddir)
         w2.save()
-
 print "fertig"
