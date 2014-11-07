@@ -1,4 +1,4 @@
-# -*- coding: iso-8859-15 -*-
+# -*- coding: UTF-8 -*-
 __author__ = 'patrick'
 from pythonwetter.models import Weather
 import yweather
@@ -10,9 +10,10 @@ from time import strftime
 WEATHER_URLY = 'http://xml.weather.yahoo.com/forecastrss?w=%s&u=c'
 WEATHER_NSY = 'http://xml.weather.yahoo.com/ns/rss/1.0'
 
-cityarray = ['Potsdam', 'Berlin', 'Hamburg', 'Brandenburg, Havel']
+cityarray = ['Potsdam', 'Berlin', 'Hamburg', 'Brandenburg, Havel', 'Aachen']
 
 for city in cityarray:
+        ########### Yahoo ###########
         client = yweather.Client()
         woeid = client.fetch_woeid(city)
         url = WEATHER_URLY % woeid
@@ -30,7 +31,6 @@ for city in cityarray:
         condition = str(ycondition.getAttribute('text'))
         code = int(ycondition.getAttribute('code'))
         title = dom.getElementsByTagName('title')[0].firstChild.data[16:]
-        winddir = 'N'
         if winddir <= 23:
             winddir = 'N'
         elif winddir <= 67:
@@ -48,7 +48,9 @@ for city in cityarray:
         elif winddir <= 338:
             winddir = 'NW'
         else:
-            winddir = 'no'
+            winddir = 'nn'
+        ######################
+        ########### Wetter.com ###########
         projektname = "pythonwetterfhb"
         apikey = "c5aa08dea1427f7a5a90762ccca6d430"
         checksum = hashlib.md5(projektname + apikey + city).hexdigest()
@@ -60,6 +62,7 @@ for city in cityarray:
         client = yweather.Client()
         apiurl = "http://api.wetter.com/forecast/weather/city/"
         projektname = "pythonwetterfhb"
+        apikey = "c5aa08dea1427f7a5a90762ccca6d430"
         checksum = hashlib.md5(projektname + apikey + citycode).hexdigest()
         url = apiurl + citycode + "/project/" + projektname + "/cs/" + checksum
         dom = minidom.parse(urllib.urlopen(url))
@@ -77,4 +80,4 @@ for city in cityarray:
         w2 = Weather(datum=strftime("%Y-%m-%d"), stadt=wtitle, anbieter='Wetter.com', wetter=wcondition, tagestemperatur=wtemperature, einheit=unit, kondition=wcode, windgeschwindigkeit=wwindspeed, windrichtung=wwinddir)
         w2.save()
 
-print "fertig"
+print "Fertig"
