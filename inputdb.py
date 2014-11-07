@@ -78,4 +78,5 @@ for city in cityarray:
     w1.save()
     w2 = Weather(datum=strftime("%Y-%m-%d"), stadt=wtitle, anbieter='Wetter.com', wetter=wcondition, tagestemperatur=wtemperature, einheit=unit, kondition=wcode, windgeschwindigkeit=wwindspeed, windrichtung=wwinddir)
     w2.save()
+
 print "fertig"
