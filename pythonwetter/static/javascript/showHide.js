@@ -40,4 +40,11 @@ function logout(){
 function register(){
     window.location.href="/accounts/signup"
 }
+
+
+function ausgabe(dateText){
+       window.location.href="/weathers?search=" + dateText
+}
+
+
 // ]]>
