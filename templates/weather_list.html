@@ -20,6 +20,29 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
+            <div class="datum">
+            <label>Datum:</label>
+            <input type="text" id="datetimepicker2"/><br><br>
+            <script>
+                $('#datetimepicker2').datetimepicker({
+                    lang:'de',
+	                timepicker:false,
+	                format:'Y-m-d',
+	                formatDate:'Y-m-d',
+	                minDate:'-1970-01-08', // yesterday is minimum date
+	                maxDate:'+1970-01-01', // and tommorow is maximum date calendar
+                    onSelect: function() {
+                    var datetext = $(this).datepicker('getDate');
+                    window.location.href="/weathers?search=" + datetext
+                    }
+                });
+               $('#datetimepicker').datetimepicker();
+            </script>
+            <li>
+                <a href="#" type="link" name="bewertung" value="Bewertung" onclick="return ausgabe()"/>Bewertung</a>
+            </li>
+            </li>
+            </div>
                 <li>
                     <a href="#" type="link" name="vorschau" value="Vorschau" onclick="return showHide()"/>Vorschau</a>
                 </li>
@@ -46,7 +69,7 @@
     	<h3 class="omb_authTitle">Login or <a href="#">Sign up</a></h3>
 		<div class="row omb_row-sm-offset-3 omb_socialButtons">
     	    <div class="col-xs-4 col-sm-2">
-		        <a href="{% provider_login_url "facebook" method="oauth2"%}" class="btn btn-lg btn-block omb_btn-facebook" onclick="changeID()">
+		        <a href="{% provider_login_url "facebook" method="oauth2"%}" class="btn btn-lg btn-block omb_btn-facebook">
 			        <i class="fa fa-facebook visible-xs"></i>
 			        <span class="hidden-xs">Facebook</span>
 		        </a>
