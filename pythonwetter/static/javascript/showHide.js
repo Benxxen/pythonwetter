@@ -42,8 +42,10 @@ function register(){
 }
 
 
-function ausgabe(dateText){
-       window.location.href="/weathers?search=" + dateText
+function ausgabe(){
+        var datum = document.getElementById("datetimepicker2").value
+        var city = document.getElementById('CityInputFeld').value
+        window.location.href="/weathers/?search=" + datum + " " + city
 }
 
 

@@ -20,9 +20,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-            <div class="datum">
-            <label>Datum:</label>
-            <input type="text" id="datetimepicker2"/><br><br>
+            <li><label class="label2">Datum:</label></li>
+            <form id="suche" class="navbar-from navbar-left" action="/weathers" method="GET" enctype ="multipart/form-data">
+                   <div class="feld">
+                       <input name="search" class="datum"  type="text" id="datetimepicker2" placeholder="W&auml;hlen sie ein Datum!" readonly/>
+                       <input name="city" type="text" class="form-control" id="CityInputFeld" placeholder="F&uuml;ge Stadt ein!">
+                   </div>
+                      <button type = "button" class="btn btn-default" id="submit3" onclick="ausgabe()">Abschicken</button>
+            </form>
+
             <script>
                 $('#datetimepicker2').datetimepicker({
                     lang:'de',
@@ -30,29 +36,21 @@
 	                format:'Y-m-d',
 	                formatDate:'Y-m-d',
 	                minDate:'-1970-01-08', // yesterday is minimum date
-	                maxDate:'+1970-01-01', // and tommorow is maximum date calendar
-                    onSelect: function() {
-                    var datetext = $(this).datepicker('getDate');
-                    window.location.href="/weathers?search=" + datetext
-                    }
+	                maxDate:'+1970-01-01' // and tommorow is maximum date calendar
                 });
-               $('#datetimepicker').datetimepicker();
+              $('#datetimepicker2').datetimepicker
             </script>
-            <li>
-                <a href="#" type="link" name="bewertung" value="Bewertung" onclick="return ausgabe()"/>Bewertung</a>
-            </li>
-            </li>
-            </div>
                 <li>
                     <a href="#" type="link" name="vorschau" value="Vorschau" onclick="return showHide()"/>Vorschau</a>
                 </li>
             </ul>
             <form class="navbar-from navbar-left" action ="/weather/" method="GET" enctype ="multipart/form-data">
                 <div class="feld">
-                    <input name="city" type="text" class="form-control" id="CityInputFeld" placeholder="F&uuml;ge Stadt ein!">
+                    <input name="city"  type="text" class="form-control" id="CityInputFeld2" placeholder="F&uuml;ge Stadt ein!">
                         </div>
                 <button type = "submit" class="btn btn-default" id="submit">Abschicken</button>
             </form>
+
             {% if request.user.is_authenticated %}
                 <button type="submit" class="btn btn-default" name="logout" id="submit2" value="Logout" onclick="return logout()">Sign Out</button>
                 <label class="login_name" id="submit2">Du bist eingeloggt als {{ user_display }}</label>

@@ -28,6 +28,19 @@
     margin-right: 20px;
 }
 
+#CityInputFeld{
+  margin-left: 5px;
+  width:195px;
+  margin-top:40px;
+  margin-bottom:5px;
+}
+
+.navbar-brand{
+    margin-top: 15px;
+    margin-right:25px;
+}
+
+
 .label{
     float: left;
     width: 5em;
@@ -136,6 +149,11 @@
 
 }
 
+#suche{
+    border-width: 20px;
+    margin-right:20px;
+}
+
 .vorschau{
     display:none;
 }
@@ -149,9 +167,11 @@
 }
 
 .datum{
+    border: 1px solid #cccccc; border-radius: 3px;
     float:right;
-    padding-top:10px;
-    padding-right:20px;
+    width: 97%;
+    height: 34px;
+    padding-left:11px;
 }
 
 .powered{
@@ -167,6 +187,16 @@
     .omb_row-sm-offset-3 div:first-child[class*="col-"] {
         margin-left: 25%;
     }
+}
+
+.label2{
+    padding-top: 15px;
+    margin-top:15px;
+}
+
+#submit3{
+    margin-top: 7px;
+    margin-left: 5px;
 }
 
 .omb_login .omb_authTitle {
