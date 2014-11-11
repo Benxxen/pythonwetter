@@ -40,15 +40,15 @@ for city in cityarray:
         wtitle = dom.getElementsByTagName('name')[0].firstChild.nodeValue + ", " + citycode[0:2]
         wcondition = dom.getElementsByTagName('w_txt')[4].firstChild.data
         wtemperature = dom.getElementsByTagName('tx')[4].firstChild.data
-        ywetter = Weather(datum=strftime("%Y-%m-%d"), stadt=title, anbieter='Yahoo', wetter=condition,
+        yahoo = Weather(datum=strftime("%Y-%m-%d"), stadt=title, anbieter='Yahoo', wetter=condition,
                      tagestemperatur=temperature, einheit=unit, kondition=code, windgeschwindigkeit=ywindspeed,
                      windrichtung=winddir)
-        print ywetter
-        ywetter.save()
-        wwetter = Weather(datum=strftime("%Y-%m-%d"), stadt=wtitle, anbieter='Wetter.com', wetter=wcondition,
+        print yahoo
+        yahoo.save()
+        wettercom = Weather(datum=strftime("%Y-%m-%d"), stadt=wtitle, anbieter='Wetter.com', wetter=wcondition,
                      tagestemperatur=wtemperature, einheit=unit, kondition=wcode, windgeschwindigkeit=wwindspeed,
                      windrichtung=wwinddir)
-        print wwetter
-        wwetter.save()
+        print wettercom
+        wettercom.save()
 
 print "Fertig"
