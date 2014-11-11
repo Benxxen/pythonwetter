@@ -1,12 +1,8 @@
 # -*- coding: UTF-8 -*-
 __author__ = 'patrick'
 from pythonwetter.models import Weather
-import yweather
-import urllib
-import hashlib
-from xml.dom import minidom
 from time import strftime
-from pythonwetter.functions import windrichtung
+from pythonwetter.functions import *
 
 WEATHER_URLY = 'http://xml.weather.yahoo.com/forecastrss?w=%s&u=c'
 WEATHER_NSY = 'http://xml.weather.yahoo.com/ns/rss/1.0'
@@ -15,8 +11,7 @@ cityarray = ['Potsdam', 'Berlin', 'Hamburg', 'Brandenburg, Havel', 'Aachen']
 
 for city in cityarray:
         ########### Yahoo ###########
-        client = yweather.Client()
-        woeid = client.fetch_woeid(city)
+        woeid = stadtidy(city)
         url = WEATHER_URLY % woeid
         dom = minidom.parse(urllib.urlopen(url))
         forecasts = []
@@ -34,19 +29,8 @@ for city in cityarray:
         title = dom.getElementsByTagName('title')[0].firstChild.data[16:]
         ######################
         ########### Wetter.com ###########
-        projektname = "pythonwetterfhb"
-        apikey = "c5aa08dea1427f7a5a90762ccca6d430"
-        checksum = hashlib.md5(projektname + apikey + city).hexdigest()
-        urlstart = "http://api.wetter.com/location/name/search/"
-        cityURL = urlstart + city + "/project/" + projektname + "/cs/" + checksum
-        url = cityURL
-        dom = minidom.parse(urllib.urlopen(url))
-        citycode = dom.getElementsByTagName('city_code')[0].firstChild.data
-        client = yweather.Client()
-        apiurl = "http://api.wetter.com/forecast/weather/city/"
-        checksum = hashlib.md5(projektname + apikey + citycode).hexdigest()
-        url = apiurl + citycode + "/project/" + projektname + "/cs/" + checksum
-        dom = minidom.parse(urllib.urlopen(url))
+        citycode = stadtidw(city)
+        dom = wwetter(citycode)
         wwindspeed = dom.getElementsByTagName('ws')[4].firstChild.data
         wwinddir = dom.getElementsByTagName('wd_txt')[4].firstChild.data
         wsunrise = 'keine Angabe'
