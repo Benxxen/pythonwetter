@@ -18,7 +18,12 @@ def get_weather_list(request):
     try:
         woe = stadtidy(city)
         citycode = stadtidw(city)
-    except:
+    except KeyError:
+        city = 'Berlin'
+        woe = stadtidy(city)
+        citycode = stadtidw(city)
+        warn = "Es wurden nicht unterstuetzte Umlaute gefunden. Bitte verwenden sie 'ae', 'oe' oder 'ue'!"
+    except IndexError:
         city = 'Berlin'
         woe = stadtidy(city)
         citycode = stadtidw(city)

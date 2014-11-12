@@ -178,6 +178,15 @@
     margin-left:2em;
 }
 
+#warning{
+    margin-top:-22px;
+}
+
+/*.warning{*/
+    /*color:red;*/
+    /*font-weight: bold;*/
+    /*text-align: center;*/
+/*}*/
 
 .container{
     display:none;
