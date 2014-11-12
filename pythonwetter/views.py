@@ -22,12 +22,12 @@ def get_weather_list(request):
         city = 'Berlin'
         woe = stadtidy(city)
         citycode = stadtidw(city)
-        warn = "Es wurden nicht unterstuetzte Umlaute gefunden. Bitte verwenden sie 'ae', 'oe' oder 'ue'!"
+        warn = u"Es wurden nicht unterstützte Umlaute gefunden. Bitte verwenden sie 'ae', 'oe' oder 'ue'!"
     except IndexError:
         city = 'Berlin'
         woe = stadtidy(city)
         citycode = stadtidw(city)
-        warn = "Die gesuchte Stadt konnte leider nicht gefunden werden. Bitte waehlen Sie eine andere Stadt!"
+        warn = u"Die gesuchte Stadt konnte leider nicht gefunden werden. Bitte wählen Sie eine andere Stadt!"
 
 
     weather_listy = yahoowetter(woe)
