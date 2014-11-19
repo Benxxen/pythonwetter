@@ -7,10 +7,10 @@ from django.db import models
 
 
 class Weather(models.Model):
-    datum = models.DateField(max_length=16)
+    datum = models.DateField(max_length=32)
     stadt = models.CharField(max_length=32)
     anbieter = models.CharField(max_length=32)
-    wetter = models.CharField(max_length=16)
+    wetter = models.CharField(max_length=32)
     tagestemperatur = models.IntegerField(max_length=3)
     einheit = models.CharField(max_length=1)
     kondition = models.IntegerField(max_length=4)
